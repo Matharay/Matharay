@@ -1,0 +1,21 @@
+{
+  "name": "Matharay",
+  "short_name": "Matharay",
+  "description": "Resuelve. Aprende. A tiempo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F1729",
+  "theme_color": "#3B5BDB",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
