@@ -47,8 +47,8 @@ type PrefSection = "language" | "appearance" | "account" | null;
 
 const AppSidebar = () => {
   const { t, subject, setSubject, language, setLanguage, darkMode, toggleDarkMode } = useApp();
-  const { state, setOpen } = useSidebar();
-  const collapsed = state === "collapsed";
+  const { state, setOpen, isMobile } = useSidebar();
+  const collapsed = state === "collapsed" && !isMobile;
   const [openPref, setOpenPref] = useState<PrefSection>(null);
   const [catalogOpen, setCatalogOpen] = useState(false);
   const [langSearch, setLangSearch] = useState("");
