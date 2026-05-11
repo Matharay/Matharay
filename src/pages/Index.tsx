@@ -113,8 +113,10 @@ const Index = () => {
             style={{
               borderBottomWidth: "2px",
               borderBottomColor: colors.accent + "60",
-              background: `linear-gradient(to right, ${colors.accent}08, transparent)`,
+              background: `linear-gradient(to right, ${colors.accent}12, hsl(var(--background)))`,
               backgroundColor: "hsl(var(--background))",
+              backdropFilter: "none",
+              WebkitBackdropFilter: "none",
             }}
           >
             <SidebarTrigger />
